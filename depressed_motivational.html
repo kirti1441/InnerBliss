@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational videos</title>
+    <style>
+        body, html {
+            height: 0%;
+            margin: 0;
+            background-color: #e4e3df; /* Set the background color using hexadecimal notation */
+        }
+        h1 {
+            text-align: center; /* Center the heading horizontally */
+            margin-top: 50px; /* Add vertical space above the heading */
+            margin-bottom: 0; /* Remove margin below the heading */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%; /* Adjust the height to fit within the viewport */
+            margin-top: 280px; /* Add margin to separate heading and videos */
+            margin-bottom: 0px; /* Add margin to separate videos and bottom */
+        }
+        .video {
+            width: 45%; /* Adjust this width as needed */
+            margin: 0 18px; /* Add margin to create space between videos */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Motivational  Videos </h1>
+
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="Moods/depressed motivation1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="video" controls>
+            <source src="Moods/depressed motivation2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var videos = document.querySelectorAll('.video');
+
+            videos.forEach(function (video) {
+                video.addEventListener('play', function (event) {
+                    var currentVideo = event.target;
+                    pauseOtherVideos(currentVideo);
+                });
+            });
+
+            function pauseOtherVideos(currentVideo) {
+                videos.forEach(function (video) {
+                    if (video !== currentVideo && !video.paused) {
+                        video.pause();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwhelmed</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #e4e3df; /* Set the background color */
+        }
+        h1 {
+            text-align: center; /* Center the heading horizontally */
+            margin-top: 80px; /* Add vertical space above the heading */
+            margin-bottom: 0px; /* Add vertical space below the heading */
+        }
+
+        .mood-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+            margin-top: 20px;
+            margin-bottom: 0px; /* Add vertical space below the container */
+            padding: 0px 20px; /* Add some padding to the sides */
+            box-sizing: border-box; /* Include padding in the width */
+        }
+        .mood-item {
+            text-align: center;
+            margin: 20px 70px 20px 70px; /* Adjust spacing */
+            width: calc(40% - 40px); /* Make each item take up half of the container width */
+            max-width: 400px; /* Set a maximum width for the items */
+        }
+        .mood-item a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+        .mood-item img {
+            width: 105%; /* Make the image fill the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Add some border radius */
+            margin-top: 10px; /* Adjust vertical spacing */
+            margin-bottom: 10px; /* Adjust vertical spacing */
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .mood-item img:hover {
+            transform: scale(1.1);
+        }
+        .mood-item p {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-family: "Cambria", sans-serif;
+            font-weight: bold; /* Make the font bold */
+            font-size: 20px; /* Increase the font size */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Choose As Per Your Mood </h1>
+
+<div class="mood-container">
+    <div class="mood-item">
+        <a href="overwhelmed_meditation.html">
+            <img src="Moods/meditation6.png" alt="Mood 1">
+            <p>Meditation</p>
+        </a>
+    </div>
+    <div class="mood-item">
+        <a href="overwhelmed_motivational.html">
+            <img src="Moods/motivational44.png" alt="Mood 2">
+            <p>Motivational Video</p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

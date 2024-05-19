@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('bga.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: antiquewhite;
+}
+
+.container {
+  height: 100vh; /* Make the container fill the entire viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding to the container */
+}
+
+.entry-controls,
+.text-controls,
+.audio-controls {
+  margin-bottom: 20px;
+}
+
+.text-controls label,
+.audio-controls button {
+  margin-right: 20px;
+}
+
+textarea {
+  width: 70%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.additional-controls button {
+  margin-right: 20px;
+}
+
+.entry-container {
+  width: 70%;
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+.entry-item  {
+  
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black; /* Add this line to set text color to black */
+  }
+  .entry-item p {
+    color: black; /* Change text color of date and time */
+    font-size: 14px; /* Adjust font size of date and time */
+  }
+  
+
+
+
